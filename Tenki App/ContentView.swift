@@ -36,6 +36,12 @@ struct ContentView: View {
                                 .fontWeight(.bold)
                             HStack(alignment: .center) {
                                 WebImage(url: day.weatherIconURL)
+                                    .resizable()
+                                    .placeholder {
+                                        Image(systemName: "hourglass")
+                                    }
+                                    .scaledToFit()
+                                    .frame(width: 60)
                                 VStack(alignment: .leading) {
                                     Text(day.overview)
                                     HStack {
