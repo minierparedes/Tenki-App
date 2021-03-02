@@ -30,8 +30,24 @@ struct ContentView: View {
                 }
                 if let forecast = forecast {
                     List(forecast.daily, id: \.dt) { day in
-                        Text(dateFormatter.string(from: day.dt))
-                            .fontWeight(.bold)
+                        VStack(alignment: .leading) {
+                            Text(dateFormatter.string(from: day.dt))
+                                .fontWeight(.bold)
+                            HStack(alignment: .top) {
+                                Image(systemName:"hourglass")
+                                    .font(.title)
+                                    .frame(width: 50, height: 50)
+                                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray))
+                                VStack(alignment: .leading) {
+                                    Text(day.weather[0].description)
+                                    Text("High: \(day.temp.max)")
+                                    Text("Low: \(day.temp.min)")
+                                    Text("Clouds: \(day.clouds)")
+                                    Text("POP: \(day.pop)")
+                                    Text("Humidity: \(day.humidity)")
+                                }
+                            }
+                        }
                     }
                     .listStyle(PlainListStyle())
                 }else {
@@ -57,9 +73,9 @@ struct ContentView: View {
                     switch result {
                     case .success(let forecast):
                         self.forecast = forecast
-//                        for day in forecast.daily {
-//                            print(day.dt)
-//                        }
+                    //                        for day in forecast.daily {
+                    //                            print(day.dt)
+                    //                        }
                     case .failure(let apiError):
                         switch apiError {
                         case .error(let errorString):
@@ -70,7 +86,7 @@ struct ContentView: View {
                 
             }
         }
-
+        
     }
 }
 
