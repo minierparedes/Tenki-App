@@ -22,7 +22,10 @@ struct ContentView: View {
                     .frame(width: 100)
                     .padding(.vertical)
                     HStack {
-                        TextField("Enter location", text: $forecastListVM.location)
+                        TextField("Enter location", text: $forecastListVM.location,
+                                  onCommit: {
+                                    forecastListVM.getWeatherForecast()
+                                  })
                             .textFieldStyle(RoundedBorderTextFieldStyle())
                         Button {
                             forecastListVM.getWeatherForecast()

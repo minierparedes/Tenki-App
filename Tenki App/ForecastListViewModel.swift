@@ -35,6 +35,7 @@ class ForecastListViewModel: ObservableObject {
     }
     
     func getWeatherForecast() {
+        UIApplication.shared.endEditing()
         isLoading = true
         let apiService = APIService.shared
         CLGeocoder().geocodeAddressString(location) { (placemarks, error) in

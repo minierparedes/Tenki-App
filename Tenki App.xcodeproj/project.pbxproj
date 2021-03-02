@@ -16,6 +16,7 @@
 		8DCBA2B825EE123C00EE5AA1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */; };
 		8DCBA2BB25EE19C600EE5AA1 /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2BA25EE19C600EE5AA1 /* ForecastListViewModel.swift */; };
 		8DCBA2C125EE380800EE5AA1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8DCBA2C025EE380800EE5AA1 /* SDWebImageSwiftUI */; };
+		8DCBA2C425EE76B500EE5AA1 /* UIAplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		8D0D53D325EDE25000810D0C /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		8DCBA2BA25EE19C600EE5AA1 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
+		8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				8D0D53C925EDE16100810D0C /* Info.plist */,
 				8D0D53D025EDE20C00810D0C /* APIService.swift */,
 				8D0D53C625EDE16100810D0C /* Preview Content */,
+				8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */,
 			);
 			path = "Tenki App";
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				8D0D53C325EDE15F00810D0C /* ContentView.swift in Sources */,
 				8D0D53D125EDE20C00810D0C /* APIService.swift in Sources */,
 				8D0D53C125EDE15F00810D0C /* Tenki_AppApp.swift in Sources */,
+				8DCBA2C425EE76B500EE5AA1 /* UIAplication+Extension.swift in Sources */,
 				8DCBA2B825EE123C00EE5AA1 /* ForecastViewModel.swift in Sources */,
 				8DCBA2BB25EE19C600EE5AA1 /* ForecastListViewModel.swift in Sources */,
 			);
