@@ -13,6 +13,7 @@
 		8D0D53C825EDE16100810D0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D0D53C725EDE16100810D0C /* Preview Assets.xcassets */; };
 		8D0D53D125EDE20C00810D0C /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D53D025EDE20C00810D0C /* APIService.swift */; };
 		8D0D53D425EDE25000810D0C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D53D325EDE25000810D0C /* Forecast.swift */; };
+		8DCBA2B825EE123C00EE5AA1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		8D0D53C925EDE16100810D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D0D53D025EDE20C00810D0C /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8D0D53D325EDE25000810D0C /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				8D0D53C025EDE15F00810D0C /* Tenki_AppApp.swift */,
 				8D0D53C225EDE15F00810D0C /* ContentView.swift */,
+				8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */,
 				8D0D53D325EDE25000810D0C /* Forecast.swift */,
 				8D0D53C425EDE16100810D0C /* Assets.xcassets */,
 				8D0D53C925EDE16100810D0C /* Info.plist */,
@@ -148,6 +151,7 @@
 				8D0D53C325EDE15F00810D0C /* ContentView.swift in Sources */,
 				8D0D53D125EDE20C00810D0C /* APIService.swift in Sources */,
 				8D0D53C125EDE15F00810D0C /* Tenki_AppApp.swift in Sources */,
+				8DCBA2B825EE123C00EE5AA1 /* ForecastViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,10 +40,14 @@ struct ContentView: View {
                                     .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray))
                                 VStack(alignment: .leading) {
                                     Text(day.weather[0].description)
-                                    Text("High: \(day.temp.max)")
-                                    Text("Low: \(day.temp.min)")
-                                    Text("Clouds: \(day.clouds)")
-                                    Text("POP: \(day.pop)")
+                                    HStack {
+                                        Text("High: \(day.temp.max, specifier: "%.0f")")
+                                        Text("Low: \(day.temp.min, specifier: "%.0f")")
+                                    }
+                                    HStack {
+                                        Text("Clouds: \(day.clouds)")
+                                        Text("POP: \(day.pop, specifier: "%.2f")")
+                                    }
                                     Text("Humidity: \(day.humidity)")
                                 }
                             }
