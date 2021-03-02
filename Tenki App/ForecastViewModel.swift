@@ -14,7 +14,7 @@ struct ForecastViewModel {
     
     private static var dateFormatter: DateFormatter {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "E, MMM, d"
+        dateFormatter.dateFormat = "E, MMM d"
         return dateFormatter
     }
     
