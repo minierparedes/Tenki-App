@@ -62,6 +62,36 @@ struct ContentView: View {
             .navigationTitle("Tenki App")
         }
     }
+    func getWeatherForecast(for location: String) {
+        let apiService = APIService.shared
+        CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
+            if let error = error {
+                print(error.localizedDescription)
+            }
+            if let lat = placemarks?.first?.location?.coordinate.latitude,
+               let lon = placemarks?.first?.location?.coordinate.longitude {
+                apiService.getJSON(urlString: "https://api.openweathermap.org/data/2.5/onecall?lat=\(lat)&lon=\(lon)&exclude=current,minutely,hourly,alerts&appid=nil",
+                                   dateDecodingStrategy: .secondsSince1970) {
+                    (result: Result<Forecast, APIService.APIError>)
+                    in
+                    switch result {
+                    case .success(let forecast):
+                        self.forecast = forecast
+//                        for day in forecast.daily {
+//                            print(day.dt)
+//                        }
+                    case .failure(let apiError):
+                        switch apiError {
+                        case .error(let errorString):
+                            print(errorString)
+                        }
+                    }
+                }
+                
+            }
+        }
+
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
