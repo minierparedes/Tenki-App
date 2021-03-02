@@ -9,54 +9,45 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var location: String = ""
-    @State var forecast: Forecast? = nil
-    let dateFormatter = DateFormatter()
-    init() {
-        dateFormatter.dateFormat = "E, MMM. d"
-    }
+    @StateObject private var forecastListVM = ForecastListViewModel()
     var body: some View {
         NavigationView {
             VStack {
                 HStack {
-                    TextField("Enter location", text: $location)
+                    TextField("Enter location", text: $forecastListVM.location)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     Button {
-                        getWeatherForecast(for: location )
+                        forecastListVM.getWeatherForecast()
                     } label: {
                         Image(systemName: "magnifyingglass.circle.fill")
                             .font(.title3)
                     }
                 }
-                if let forecast = forecast {
-                    List(forecast.daily, id: \.dt) { day in
+                List(forecastListVM.forecasts, id: \.day) { day in
                         VStack(alignment: .leading) {
-                            Text(dateFormatter.string(from: day.dt))
+                            Text(day.day)
                                 .fontWeight(.bold)
-                            HStack(alignment: .top) {
+                            HStack(alignment: .center) {
                                 Image(systemName:"hourglass")
                                     .font(.title)
                                     .frame(width: 50, height: 50)
                                     .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray))
                                 VStack(alignment: .leading) {
-                                    Text(day.weather[0].description)
+                                    Text(day.overview)
                                     HStack {
-                                        Text("High: \(day.temp.max, specifier: "%.0f")")
-                                        Text("Low: \(day.temp.min, specifier: "%.0f")")
+                                        Text(day.high)
+                                        Text(day.low)
                                     }
                                     HStack {
-                                        Text("Clouds: \(day.clouds)")
-                                        Text("POP: \(day.pop, specifier: "%.2f")")
+                                        Text(day.clouds)
+                                        Text(day.pop)
                                     }
-                                    Text("Humidity: \(day.humidity)")
+                                    Text(day.humidity)
                                 }
                             }
                         }
                     }
                     .listStyle(PlainListStyle())
-                }else {
-                    Spacer()
-                }
             }
             .padding(.horizontal)
             .navigationTitle("Tenki App")
