@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		8D0D53D425EDE25000810D0C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D0D53D325EDE25000810D0C /* Forecast.swift */; };
 		8DCBA2B825EE123C00EE5AA1 /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */; };
 		8DCBA2BB25EE19C600EE5AA1 /* ForecastListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DCBA2BA25EE19C600EE5AA1 /* ForecastListViewModel.swift */; };
+		8DCBA2C125EE380800EE5AA1 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 8DCBA2C025EE380800EE5AA1 /* SDWebImageSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCBA2C125EE380800EE5AA1 /* SDWebImageSwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +99,9 @@
 			dependencies = (
 			);
 			name = "Tenki App";
+			packageProductDependencies = (
+				8DCBA2C025EE380800EE5AA1 /* SDWebImageSwiftUI */,
+			);
 			productName = "Tenki App";
 			productReference = 8D0D53BD25EDE15F00810D0C /* Tenki App.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 8D0D53B425EDE15F00810D0C;
+			packageReferences = (
+				8DCBA2BF25EE380800EE5AA1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
 			productRefGroup = 8D0D53BE25EDE15F00810D0C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -344,6 +352,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8DCBA2BF25EE380800EE5AA1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8DCBA2C025EE380800EE5AA1 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8DCBA2BF25EE380800EE5AA1 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8D0D53B525EDE15F00810D0C /* Project object */;
 }

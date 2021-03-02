@@ -5,7 +5,7 @@
 //  Created by ethancr0wn on 2021/03/02.
 //
 
-
+import SDWebImageSwiftUI
 import SwiftUI
 
 struct ContentView: View {
@@ -35,10 +35,7 @@ struct ContentView: View {
                             Text(day.day)
                                 .fontWeight(.bold)
                             HStack(alignment: .center) {
-                                Image(systemName:"hourglass")
-                                    .font(.title)
-                                    .frame(width: 50, height: 50)
-                                    .background(RoundedRectangle(cornerRadius: 10).fill(Color.gray))
+                                WebImage(url: day.weatherIconURL)
                                 VStack(alignment: .leading) {
                                     Text(day.overview)
                                     HStack {
