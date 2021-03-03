@@ -72,8 +72,8 @@
 				8D0D53C425EDE16100810D0C /* Assets.xcassets */,
 				8D0D53C925EDE16100810D0C /* Info.plist */,
 				8D0D53D025EDE20C00810D0C /* APIService.swift */,
-				8D0D53C625EDE16100810D0C /* Preview Content */,
 				8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */,
+				8D0D53C625EDE16100810D0C /* Preview Content */,
 			);
 			path = "Tenki App";
 			sourceTree = "<group>";

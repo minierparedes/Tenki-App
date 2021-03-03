@@ -19,7 +19,8 @@ class ForecastListViewModel: ObservableObject {
     @Published var forecasts: [ForecastViewModel] = []
     var appError: AppError? = nil
     @Published var isLoading: Bool = false
-    @AppStorage("location") var location: String = ""
+    @AppStorage("location") var storageLocation: String = ""
+    @Published var location = ""
     @AppStorage("system") var system: Int = 0 {
         didSet {
             for i in 0..<forecasts.count {
@@ -29,13 +30,16 @@ class ForecastListViewModel: ObservableObject {
     }
     
     init() {
-        if location != "" {
+        location = storageLocation
             getWeatherForecast()
-        }
     }
     
     func getWeatherForecast() {
+        storageLocation = location
         UIApplication.shared.endEditing()
+        if location == "" {
+            forecasts = []
+        } else {
         isLoading = true
         let apiService = APIService.shared
         CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
@@ -68,6 +72,6 @@ class ForecastListViewModel: ObservableObject {
                 
             }
         }
-        
+    }
     }
 }

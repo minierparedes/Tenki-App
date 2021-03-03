@@ -27,6 +27,17 @@ struct ContentView: View {
                                     forecastListVM.getWeatherForecast()
                                   })
                             .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .overlay(
+                                Button(action: {
+                                    forecastListVM.location = ""
+                                    forecastListVM.getWeatherForecast()
+                                }) {
+                                    Image(systemName: "xmark.circle")
+                                        .foregroundColor(.gray)
+                                }
+                                .padding(.horizontal),
+                                alignment: .trailing
+                            )
                         Button {
                             forecastListVM.getWeatherForecast()
                         } label: {
