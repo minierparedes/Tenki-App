@@ -23,7 +23,7 @@ the state of humidity level.
 
 <br>
 
-The  app is planned for deployment in [**AppStore**](https://hardcore-meninsky-aebb95.netlify.app) and will be avialable for use. The data that Tenki app uses is provided by the **OpenWeatherMap.org** as a JSON API [OpenWeatherMap.org](https://openweathermap.org/api)
+The  app is planned for deployment in [**AppStore**](https://hardcore-meninsky-aebb95.netlify.app) and will be avialable for use. The data that Tenki app uses is provided by the [**OpenWeatherMap.org**](https://openweathermap.org/api)
 
 <br>
 <br>
