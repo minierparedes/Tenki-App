@@ -19,11 +19,19 @@ the state of humidity level.
 
 <br>
 
+<img width="455" alt="Screen Shot 2021-03-03 at 16 54 08" src="https://user-images.githubusercontent.com/65219445/109772576-7efa8d80-7c41-11eb-9a25-39cc99e450ae.png">
+
+<img width="452" alt="Screen Shot 2021-03-03 at 16 52 52" src="https://user-images.githubusercontent.com/65219445/109772647-96d21180-7c41-11eb-8dea-0854449779ab.png">
+
+
+<br>
+
+
 ## AppStore
 
 <br>
 
-The  app is planned for deployment in [**AppStore**](https://hardcore-meninsky-aebb95.netlify.app) and will be avialable for use. The data that Tenki app uses is provided by the [**OpenWeatherMap.org**](https://openweathermap.org/api)
+The app is planned for deployment in [**AppStore**](https://apps.apple.com/jp/app/apple-store/id375380948) and will be avialable for use. The data that Tenki app uses is provided by the [**OpenWeatherMap.org**](https://openweathermap.org/api)
 
 <br>
 <br>
