@@ -49,6 +49,7 @@
 		8D0D53B425EDE15F00810D0C = {
 			isa = PBXGroup;
 			children = (
+				8DCBA2C725EF6DF800EE5AA1 /* README.md */,
 				8D0D53BF25EDE15F00810D0C /* Tenki App */,
 				8D0D53BE25EDE15F00810D0C /* Products */,
 			);
@@ -74,7 +75,6 @@
 				8D0D53C925EDE16100810D0C /* Info.plist */,
 				8D0D53D025EDE20C00810D0C /* APIService.swift */,
 				8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */,
-				8DCBA2C725EF6DF800EE5AA1 /* README.md */,
 				8D0D53C625EDE16100810D0C /* Preview Content */,
 			);
 			path = "Tenki App";
