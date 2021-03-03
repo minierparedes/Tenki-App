@@ -19,7 +19,7 @@ the state of humidity level.
 
 <br>
 
-<img width="185" alt="Screen Shot 2021-03-03 at 16 54 08" src="https://user-images.githubusercontent.com/65219445/109772576-7efa8d80-7c41-11eb-9a25-39cc99e450ae.png">, <img width="185" alt="Screen Shot 2021-03-03 at 16 52 52" src="https://user-images.githubusercontent.com/65219445/109772647-96d21180-7c41-11eb-8dea-0854449779ab.png">
+<img width="185" alt="Screen Shot 2021-03-03 at 16 54 08" src="https://user-images.githubusercontent.com/65219445/109772576-7efa8d80-7c41-11eb-9a25-39cc99e450ae.png"> <img width="185" alt="Screen Shot 2021-03-03 at 16 52 52" src="https://user-images.githubusercontent.com/65219445/109772647-96d21180-7c41-11eb-8dea-0854449779ab.png">
 
 
 
