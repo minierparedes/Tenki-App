@@ -43,9 +43,17 @@ class ForecastListViewModel: ObservableObject {
         isLoading = true
         let apiService = APIService.shared
         CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
-            if let error = error {
+            if let error = error as? CLError {
+                switch error.code {
+                
+                case .locationUnknown, .geocodeFoundNoResult, .geocodeFoundPartialResult:
+                    self.appError = AppError(errorString: NSLocalizedString("unable to determine location from this text", comment: ""))
+                case .network:
+                    self.appError = AppError(errorString: NSLocalizedString("You do not appear to have a network connection", comment: ""))
+                default:
+                    self.appError = AppError(errorString: error.localizedDescription)
+                }
                 self.isLoading = false
-                self.appError = AppError(errorString: error.localizedDescription)
                 print(error.localizedDescription)
             }
             if let lat = placemarks?.first?.location?.coordinate.latitude,

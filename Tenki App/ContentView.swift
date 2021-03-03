@@ -59,6 +59,7 @@ struct ContentView: View {
                                         .frame(width: 60)
                                     VStack(alignment: .leading) {
                                         Text(day.overview)
+                                            .font(.title3)
                                         HStack {
                                             Text(day.high)
                                             Text(day.low)
