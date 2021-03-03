@@ -31,6 +31,7 @@
 		8DCBA2B725EE123C00EE5AA1 /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
 		8DCBA2BA25EE19C600EE5AA1 /* ForecastListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastListViewModel.swift; sourceTree = "<group>"; };
 		8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAplication+Extension.swift"; sourceTree = "<group>"; };
+		8DCBA2C725EF6DF800EE5AA1 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				8D0D53C925EDE16100810D0C /* Info.plist */,
 				8D0D53D025EDE20C00810D0C /* APIService.swift */,
 				8DCBA2C325EE76B500EE5AA1 /* UIAplication+Extension.swift */,
+				8DCBA2C725EF6DF800EE5AA1 /* README.md */,
 				8D0D53C625EDE16100810D0C /* Preview Content */,
 			);
 			path = "Tenki App";
